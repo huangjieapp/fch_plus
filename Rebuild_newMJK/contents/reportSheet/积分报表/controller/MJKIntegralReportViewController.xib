@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MJKIntegralReportViewController">
+            <connections>
+                <outlet property="screenButton" destination="ddp-Zd-IeW" id="wzV-jg-tae"/>
+                <outlet property="tableView" destination="VUM-wg-Z8G" id="k8S-Sa-gqa"/>
+                <outlet property="timeLabel" destination="QpG-Vb-0iC" id="Pjs-kv-rYF"/>
+                <outlet property="topLayout" destination="LfF-5K-Qp5" id="3EY-ul-42a"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mjt-kt-CIZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="积分报表" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jm-m1-83q">
+                            <rect key="frame" x="10" y="6.5" width="57.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddp-Zd-IeW">
+                            <rect key="frame" x="335" y="0.5" width="30" height="29"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="筛选">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="screenButtonAction:" destination="-1" eventType="touchUpInside" id="rdm-it-RyM"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpG-Vb-0iC">
+                            <rect key="frame" x="315" y="15" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.87058823529411766" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="QpG-Vb-0iC" firstAttribute="centerY" secondItem="mjt-kt-CIZ" secondAttribute="centerY" id="9MM-Vf-UbP"/>
+                        <constraint firstItem="0jm-m1-83q" firstAttribute="leading" secondItem="mjt-kt-CIZ" secondAttribute="leading" constant="10" id="FU0-6I-pQY"/>
+                        <constraint firstAttribute="trailing" secondItem="ddp-Zd-IeW" secondAttribute="trailing" constant="10" id="K0t-kf-x9M"/>
+                        <constraint firstItem="0jm-m1-83q" firstAttribute="centerY" secondItem="mjt-kt-CIZ" secondAttribute="centerY" id="kni-NF-6Zf"/>
+                        <constraint firstItem="ddp-Zd-IeW" firstAttribute="centerY" secondItem="mjt-kt-CIZ" secondAttribute="centerY" id="nuv-HK-03j"/>
+                        <constraint firstItem="ddp-Zd-IeW" firstAttribute="leading" secondItem="QpG-Vb-0iC" secondAttribute="trailing" constant="20" id="rk5-WQ-cAX"/>
+                        <constraint firstAttribute="height" constant="30" id="toE-hn-OPa"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VUM-wg-Z8G">
+                    <rect key="frame" x="0.0" y="30" width="375" height="637"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="nTT-98-kHO"/>
+                        <outlet property="delegate" destination="-1" id="Rtg-7N-5DR"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VUM-wg-Z8G" firstAttribute="top" secondItem="mjt-kt-CIZ" secondAttribute="bottom" id="9aX-kJ-LUh"/>
+                <constraint firstItem="mjt-kt-CIZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="B1d-0u-9HV"/>
+                <constraint firstAttribute="trailing" secondItem="mjt-kt-CIZ" secondAttribute="trailing" id="CCY-Yx-5tB"/>
+                <constraint firstItem="mjt-kt-CIZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LfF-5K-Qp5"/>
+                <constraint firstAttribute="bottom" secondItem="VUM-wg-Z8G" secondAttribute="bottom" id="aYc-zY-XdE"/>
+                <constraint firstItem="VUM-wg-Z8G" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="h5p-l6-UwV"/>
+                <constraint firstAttribute="trailing" secondItem="VUM-wg-Z8G" secondAttribute="trailing" id="rUr-5k-X7S"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,14 @@
+//
+//  MJKSourceShowTableViewCell.h
+//  Rebuild_newMJK
+//
+//  Created by mac on 2018/5/17.
+//  Copyright © 2018年 脉居客. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface MJKSourceShowTableViewCell : UITableViewCell
++ (instancetype)cellWithTableView:(UITableView *)tableView;
+@property (nonatomic, strong) NSArray *dataArray;
+@end

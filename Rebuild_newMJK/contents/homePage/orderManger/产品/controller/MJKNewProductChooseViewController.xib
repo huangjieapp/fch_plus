@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MJKNewProductChooseViewController">
+            <connections>
+                <outlet property="bottomLayout" destination="DPs-Bg-MBr" id="Fm3-ez-zTO"/>
+                <outlet property="bottomView" destination="off-6G-rMX" id="8vv-ux-hDS"/>
+                <outlet property="mainTabelView" destination="tyU-av-jH2" id="oiq-2R-otJ"/>
+                <outlet property="mainTopLayout" destination="AHV-Qb-kPW" id="X5m-yA-uuX"/>
+                <outlet property="searchTableView" destination="wkU-1M-iRC" id="Xqv-Ur-vka"/>
+                <outlet property="searchTopLayout" destination="V1w-Dg-7p0" id="Xey-Vr-HYo"/>
+                <outlet property="typeTableView" destination="8Os-2F-2U3" id="kZL-uk-PqA"/>
+                <outlet property="typeTopLayout" destination="UPT-FN-yOP" id="5mj-no-kLm"/>
+                <outlet property="view" destination="iN0-l3-epB" id="oXi-sK-hAe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Os-2F-2U3">
+                    <rect key="frame" x="0.0" y="0.0" width="94" height="612"/>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="F8E-mA-o02"/>
+                        <outlet property="delegate" destination="-1" id="TWo-Bg-eEc"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tyU-av-jH2">
+                    <rect key="frame" x="94" y="0.0" width="281" height="612"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="RJZ-5J-PWF"/>
+                        <outlet property="delegate" destination="-1" id="Ak2-xh-9Iq"/>
+                    </connections>
+                </tableView>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wkU-1M-iRC">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="RfF-i8-FkY"/>
+                        <outlet property="delegate" destination="-1" id="Aej-Mg-T7b"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="off-6G-rMX">
+                    <rect key="frame" x="0.0" y="612" width="375" height="55"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2y-ty-5lz">
+                            <rect key="frame" x="5" y="5" width="365" height="45"/>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.80392156859999997" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <state key="normal" title="确定">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="commitButtonAction:" destination="-1" eventType="touchUpInside" id="Wg7-dP-Kqb"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="h2y-ty-5lz" secondAttribute="bottom" constant="5" id="9W4-LS-fkj"/>
+                        <constraint firstAttribute="trailing" secondItem="h2y-ty-5lz" secondAttribute="trailing" constant="5" id="IEh-Nw-YOa"/>
+                        <constraint firstItem="h2y-ty-5lz" firstAttribute="top" secondItem="off-6G-rMX" secondAttribute="top" constant="5" id="Jws-lS-zl6"/>
+                        <constraint firstItem="h2y-ty-5lz" firstAttribute="leading" secondItem="off-6G-rMX" secondAttribute="leading" constant="5" id="YTO-rm-z63"/>
+                        <constraint firstAttribute="height" constant="55" id="pjT-mQ-gV3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tyU-av-jH2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AHV-Qb-kPW"/>
+                <constraint firstAttribute="bottom" secondItem="off-6G-rMX" secondAttribute="bottom" constant="0.10000000000000001" id="DPs-Bg-MBr"/>
+                <constraint firstItem="8Os-2F-2U3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="G3B-xe-myw"/>
+                <constraint firstAttribute="trailing" secondItem="tyU-av-jH2" secondAttribute="trailing" id="N9z-kX-MY4"/>
+                <constraint firstAttribute="trailing" secondItem="wkU-1M-iRC" secondAttribute="trailing" id="R9q-VC-dXc"/>
+                <constraint firstItem="off-6G-rMX" firstAttribute="top" secondItem="tyU-av-jH2" secondAttribute="bottom" constant="0.10000000000000001" id="U5U-fF-btO"/>
+                <constraint firstItem="8Os-2F-2U3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UPT-FN-yOP"/>
+                <constraint firstItem="wkU-1M-iRC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="V1w-Dg-7p0"/>
+                <constraint firstItem="off-6G-rMX" firstAttribute="top" secondItem="8Os-2F-2U3" secondAttribute="bottom" constant="0.10000000000000001" id="VfF-CR-MdV"/>
+                <constraint firstItem="8Os-2F-2U3" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1:4" id="eU7-jN-1T9"/>
+                <constraint firstItem="wkU-1M-iRC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fVj-Fa-QhA"/>
+                <constraint firstItem="tyU-av-jH2" firstAttribute="leading" secondItem="8Os-2F-2U3" secondAttribute="trailing" id="fi2-3F-f3v"/>
+                <constraint firstAttribute="bottom" secondItem="wkU-1M-iRC" secondAttribute="bottom" constant="0.10000000000000001" id="jRo-OV-1aa"/>
+                <constraint firstAttribute="trailing" secondItem="off-6G-rMX" secondAttribute="trailing" constant="0.10000000000000001" id="txT-cf-Ooh"/>
+                <constraint firstItem="off-6G-rMX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="0.10000000000000001" id="wtg-R9-z0m"/>
+            </constraints>
+            <point key="canvasLocation" x="138.40000000000001" y="113.79310344827587"/>
+        </view>
+        <tapGestureRecognizer id="xWg-DL-bQh">
+            <connections>
+                <action selector="tapShoppingMallImage:" destination="-1" id="oo2-5O-zMG"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="e7l-gn-MzU">
+            <connections>
+                <action selector="hiddenShoppingCart:" destination="-1" id="6Vf-Ef-DrA"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

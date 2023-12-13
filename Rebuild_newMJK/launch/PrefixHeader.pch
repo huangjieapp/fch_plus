@@ -1,0 +1,44 @@
+//
+//  PrefixHeader.pch
+//  XLMiaoBo
+//
+//  Created by XuLi on 16/8/30.
+//  Copyright © 2016年 XuLi. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#import "GlobalInfo.h"
+
+
+
+
+#endif
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+//自动登录
+#if TARGET_IPHONE_SIMULATOR
+//    [NewUserSession falseDatas];
+
+
+#elif TARGET_OS_IPHONE
+
+//    [self autoLogin];
+#endif
+
+
+
+
+
+
+#endif /* PrefixHeader_pch */
+
+
+

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MJKProductCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENj-9g-iu9">
+                        <rect key="frame" x="0.0" y="0.0" width="76.5" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJZ-T1-1wQ">
+                        <rect key="frame" x="76.5" y="0.0" width="90" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="X3Z-Dr-Tqy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWe-Cf-T96">
+                        <rect key="frame" x="166.5" y="0.0" width="77" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PQK-y4-IPX">
+                        <rect key="frame" x="243.5" y="0.0" width="76.5" height="43.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSs-Dv-IXG">
+                                <rect key="frame" x="31.5" y="11" width="14" height="22"/>
+                                <state key="normal" image="kuang_off"/>
+                                <connections>
+                                    <action selector="selectLikeProductButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="JEp-lQ-bM1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TSs-Dv-IXG" firstAttribute="centerX" secondItem="PQK-y4-IPX" secondAttribute="centerX" id="DrM-eg-ZZA"/>
+                            <constraint firstItem="TSs-Dv-IXG" firstAttribute="centerY" secondItem="PQK-y4-IPX" secondAttribute="centerY" id="Umb-wb-fnA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="PQK-y4-IPX" secondAttribute="trailing" id="9uB-kd-oHh"/>
+                    <constraint firstItem="PQK-y4-IPX" firstAttribute="width" secondItem="jWe-Cf-T96" secondAttribute="width" id="HEd-VK-Faz"/>
+                    <constraint firstItem="jWe-Cf-T96" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="LZK-1h-cRA"/>
+                    <constraint firstItem="ENj-9g-iu9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="RTv-Kf-Q9s"/>
+                    <constraint firstAttribute="bottom" secondItem="jWe-Cf-T96" secondAttribute="bottom" id="S1h-7e-AoE"/>
+                    <constraint firstAttribute="bottom" secondItem="PQK-y4-IPX" secondAttribute="bottom" id="Tex-MP-tJt"/>
+                    <constraint firstItem="PQK-y4-IPX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="VYz-Ge-T14"/>
+                    <constraint firstItem="jWe-Cf-T96" firstAttribute="leading" secondItem="mJZ-T1-1wQ" secondAttribute="trailing" id="WuK-l3-6By"/>
+                    <constraint firstItem="mJZ-T1-1wQ" firstAttribute="leading" secondItem="ENj-9g-iu9" secondAttribute="trailing" id="d4m-0v-HOq"/>
+                    <constraint firstAttribute="bottom" secondItem="ENj-9g-iu9" secondAttribute="bottom" id="fJJ-i1-cUR"/>
+                    <constraint firstItem="ENj-9g-iu9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="geV-28-ixz"/>
+                    <constraint firstItem="ENj-9g-iu9" firstAttribute="width" secondItem="jWe-Cf-T96" secondAttribute="width" id="kmc-p5-fqy"/>
+                    <constraint firstItem="mJZ-T1-1wQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lru-1Q-Fii"/>
+                    <constraint firstItem="PQK-y4-IPX" firstAttribute="leading" secondItem="jWe-Cf-T96" secondAttribute="trailing" id="uRh-yr-OE6"/>
+                    <constraint firstAttribute="bottom" secondItem="mJZ-T1-1wQ" secondAttribute="bottom" id="xjy-Un-ZdR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="numberLabel" destination="ENj-9g-iu9" id="b9i-bJ-MiD"/>
+                <outlet property="priceLaebl" destination="jWe-Cf-T96" id="Dp0-La-Gaj"/>
+                <outlet property="productLabel" destination="mJZ-T1-1wQ" id="B08-7e-5Ge"/>
+                <outlet property="selectProductButton" destination="TSs-Dv-IXG" id="jz9-BK-Ibk"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="kuang_off" width="14" height="14"/>
+    </resources>
+</document>

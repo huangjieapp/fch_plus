@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MJKIntroduceViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7o9-Y9-Cja">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="800" translatesAutoresizingMaskIntoConstraints="NO" id="o38-ud-on4">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="668"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_jianjie" translatesAutoresizingMaskIntoConstraints="NO" id="Qm9-r5-2ha">
+                                    <rect key="frame" x="15" y="15" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="0je-ud-2TY"/>
+                                        <constraint firstAttribute="width" constant="20" id="6PK-dq-6eS"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="简介" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3SM-iP-Vc8">
+                                    <rect key="frame" x="45" y="14.5" width="35" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xIF-PO-5ol">
+                                    <rect key="frame" x="15" y="50.5" width="345" height="130"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="130" id="FOI-NJ-jPz"/>
+                                    </constraints>
+                                    <string key="text">作为汽车新零售解决方案服务商，房车汇5.0以让家居服务商生意更好做为口号，全面为行业从业者提供专业、高效的全域数字营销，智能化展厅零售过程管理，移动售后服务一体化解决方案，利用互联网工具提升经营效率和能力，提升客户满意度，减少客户流失。结合智能硬件及人工智能技术打造全新的服务体系，为客户创造更大的价值。</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MJK_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="s8k-oc-RwA">
+                                    <rect key="frame" x="60" y="195.5" width="255" height="130"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="130" id="kFJ-UI-ha1"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_ustotal" translatesAutoresizingMaskIntoConstraints="NO" id="lo2-uJ-0uK">
+                                    <rect key="frame" x="15" y="355.5" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="V7T-eI-siw"/>
+                                        <constraint firstAttribute="width" constant="20" id="pqf-um-UDT"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系方式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73O-U0-62I">
+                                    <rect key="frame" x="45" y="355" width="70" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_usphone" translatesAutoresizingMaskIntoConstraints="NO" id="IX4-oY-f30">
+                                    <rect key="frame" x="19" y="395.5" width="12" height="12"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="12" id="SRg-W2-FKV"/>
+                                        <constraint firstAttribute="width" constant="12" id="aCW-mM-PuC"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系电话：021-55698681" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jQ-s3-mUg">
+                                    <rect key="frame" x="41" y="394.5" width="146" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_ustime" translatesAutoresizingMaskIntoConstraints="NO" id="ssc-60-eYe">
+                                    <rect key="frame" x="19" y="417.5" width="12" height="12"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="12" id="2ZV-l7-oPK"/>
+                                        <constraint firstAttribute="width" constant="12" id="zpd-xm-eKX"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="工作时间：周一至周日8:00-22:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNc-Vp-2De">
+                                    <rect key="frame" x="41" y="416" width="188" height="15"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_usadress" translatesAutoresizingMaskIntoConstraints="NO" id="s6d-8J-vvM">
+                                    <rect key="frame" x="19" y="439.5" width="12" height="12"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="12" id="AHT-fE-YhR"/>
+                                        <constraint firstAttribute="height" constant="12" id="flH-Gq-HC9"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="公司地址：上海市国定东路200号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXi-wc-FGp">
+                                    <rect key="frame" x="41" y="438" width="182" height="15"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="668" id="27m-Vx-SqG"/>
+                                <constraint firstAttribute="trailing" secondItem="s8k-oc-RwA" secondAttribute="trailing" constant="60" id="2oB-xN-Mju"/>
+                                <constraint firstItem="ssc-60-eYe" firstAttribute="top" secondItem="IX4-oY-f30" secondAttribute="bottom" constant="10" id="4f9-se-DTW"/>
+                                <constraint firstItem="s8k-oc-RwA" firstAttribute="leading" secondItem="o38-ud-on4" secondAttribute="leading" constant="60" id="7T2-m3-wb3"/>
+                                <constraint firstItem="IX4-oY-f30" firstAttribute="centerY" secondItem="2jQ-s3-mUg" secondAttribute="centerY" id="81Z-Bk-XO8"/>
+                                <constraint firstItem="IX4-oY-f30" firstAttribute="centerX" secondItem="lo2-uJ-0uK" secondAttribute="centerX" id="AT9-O7-riU"/>
+                                <constraint firstItem="s8k-oc-RwA" firstAttribute="top" secondItem="xIF-PO-5ol" secondAttribute="bottom" constant="15" id="Djb-Oe-fnE"/>
+                                <constraint firstItem="xIF-PO-5ol" firstAttribute="leading" secondItem="o38-ud-on4" secondAttribute="leading" constant="15" id="EJE-IN-lBj"/>
+                                <constraint firstItem="lo2-uJ-0uK" firstAttribute="top" secondItem="s8k-oc-RwA" secondAttribute="bottom" constant="30" id="FaG-OC-hGn"/>
+                                <constraint firstItem="s6d-8J-vvM" firstAttribute="centerX" secondItem="ssc-60-eYe" secondAttribute="centerX" id="LkO-Kl-bMt"/>
+                                <constraint firstItem="73O-U0-62I" firstAttribute="leading" secondItem="lo2-uJ-0uK" secondAttribute="trailing" constant="10" id="NJL-TU-W6Y"/>
+                                <constraint firstItem="s8k-oc-RwA" firstAttribute="centerX" secondItem="o38-ud-on4" secondAttribute="centerX" id="Pe3-IZ-oeS"/>
+                                <constraint firstItem="xIF-PO-5ol" firstAttribute="top" secondItem="3SM-iP-Vc8" secondAttribute="bottom" constant="15" id="Tdw-pZ-yAg"/>
+                                <constraint firstItem="GNc-Vp-2De" firstAttribute="centerY" secondItem="ssc-60-eYe" secondAttribute="centerY" id="Tmg-wf-RKc"/>
+                                <constraint firstAttribute="trailing" secondItem="xIF-PO-5ol" secondAttribute="trailing" constant="15" id="U7p-15-4Nc"/>
+                                <constraint firstItem="3SM-iP-Vc8" firstAttribute="leading" secondItem="Qm9-r5-2ha" secondAttribute="trailing" constant="10" id="V8U-sE-AiV"/>
+                                <constraint firstItem="3SM-iP-Vc8" firstAttribute="centerY" secondItem="Qm9-r5-2ha" secondAttribute="centerY" id="WV8-aF-M6b"/>
+                                <constraint firstItem="Qm9-r5-2ha" firstAttribute="top" secondItem="o38-ud-on4" secondAttribute="top" constant="15" id="YZz-Z3-8Hs"/>
+                                <constraint firstItem="Qm9-r5-2ha" firstAttribute="leading" secondItem="o38-ud-on4" secondAttribute="leading" constant="15" id="a4d-ce-AYj"/>
+                                <constraint firstItem="s6d-8J-vvM" firstAttribute="top" secondItem="ssc-60-eYe" secondAttribute="bottom" constant="10" id="cCI-xF-NlJ"/>
+                                <constraint firstItem="ssc-60-eYe" firstAttribute="centerX" secondItem="IX4-oY-f30" secondAttribute="centerX" id="e5i-XA-amq"/>
+                                <constraint firstItem="2jQ-s3-mUg" firstAttribute="leading" secondItem="IX4-oY-f30" secondAttribute="trailing" constant="10" id="eJA-wL-Pwm"/>
+                                <constraint firstItem="lo2-uJ-0uK" firstAttribute="leading" secondItem="o38-ud-on4" secondAttribute="leading" constant="15" id="ojP-DJ-mp8"/>
+                                <constraint firstItem="73O-U0-62I" firstAttribute="centerY" secondItem="lo2-uJ-0uK" secondAttribute="centerY" id="p9l-h4-Vp1"/>
+                                <constraint firstItem="FXi-wc-FGp" firstAttribute="centerY" secondItem="s6d-8J-vvM" secondAttribute="centerY" id="rVP-hP-aAk"/>
+                                <constraint firstItem="GNc-Vp-2De" firstAttribute="leading" secondItem="ssc-60-eYe" secondAttribute="trailing" constant="10" id="sYL-nC-uax"/>
+                                <constraint firstItem="FXi-wc-FGp" firstAttribute="leading" secondItem="s6d-8J-vvM" secondAttribute="trailing" constant="10" id="txD-zc-jUd"/>
+                                <constraint firstItem="IX4-oY-f30" firstAttribute="top" secondItem="lo2-uJ-0uK" secondAttribute="bottom" constant="20" id="yO9-ao-A4g"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="o38-ud-on4" firstAttribute="leading" secondItem="7o9-Y9-Cja" secondAttribute="leading" id="DaR-k4-5Nc"/>
+                        <constraint firstItem="o38-ud-on4" firstAttribute="top" secondItem="7o9-Y9-Cja" secondAttribute="top" id="OIA-Lz-wKy"/>
+                        <constraint firstAttribute="trailing" secondItem="o38-ud-on4" secondAttribute="trailing" id="QEl-at-V7d"/>
+                        <constraint firstItem="o38-ud-on4" firstAttribute="width" secondItem="7o9-Y9-Cja" secondAttribute="width" id="xtf-VZ-ihe"/>
+                        <constraint firstAttribute="bottom" secondItem="o38-ud-on4" secondAttribute="bottom" id="yL1-bZ-JFB"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="7o9-Y9-Cja" secondAttribute="trailing" id="AJw-7x-pLk"/>
+                <constraint firstAttribute="bottom" secondItem="7o9-Y9-Cja" secondAttribute="bottom" id="LWL-sF-N71"/>
+                <constraint firstItem="7o9-Y9-Cja" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ujq-Xe-Pw7"/>
+                <constraint firstItem="7o9-Y9-Cja" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dOC-ON-38N"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="-191.5" y="-164.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="MJK_Logo" width="375" height="175"/>
+        <image name="icon_jianjie" width="64" height="64"/>
+        <image name="icon_usadress" width="17.5" height="22"/>
+        <image name="icon_usphone" width="19.5" height="20.5"/>
+        <image name="icon_ustime" width="19.5" height="20.5"/>
+        <image name="icon_ustotal" width="26.5" height="25.5"/>
+    </resources>
+</document>

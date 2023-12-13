@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="145" id="KGk-i7-Jjw" customClass="MJKHomePageTodoNewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="BFr-1Y-MCm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewLayout key="collectionViewLayout" id="OaR-c3-MCL" customClass="MJKNewFlowLayout"/>
+                        <connections>
+                            <outlet property="dataSource" destination="-1" id="W5l-Hp-Amt"/>
+                            <outlet property="delegate" destination="-1" id="I3Y-jj-KhE"/>
+                        </connections>
+                    </collectionView>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNC-fx-tUO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TiA-q5-8n7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Q6-Cm-WFE">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="TiA-q5-8n7" firstAttribute="top" secondItem="ZNC-fx-tUO" secondAttribute="top" id="JA2-AR-rSR"/>
+                            <constraint firstAttribute="trailing" secondItem="TiA-q5-8n7" secondAttribute="trailing" id="KPL-Py-pe3"/>
+                            <constraint firstAttribute="bottom" secondItem="1Q6-Cm-WFE" secondAttribute="bottom" id="OJC-6f-Dx5"/>
+                            <constraint firstItem="TiA-q5-8n7" firstAttribute="leading" secondItem="ZNC-fx-tUO" secondAttribute="leading" id="Qg8-fI-QFU"/>
+                            <constraint firstItem="1Q6-Cm-WFE" firstAttribute="top" secondItem="ZNC-fx-tUO" secondAttribute="top" id="Ryp-sv-rDd"/>
+                            <constraint firstItem="1Q6-Cm-WFE" firstAttribute="leading" secondItem="ZNC-fx-tUO" secondAttribute="leading" id="Vg4-wc-sV7"/>
+                            <constraint firstAttribute="bottom" secondItem="TiA-q5-8n7" secondAttribute="bottom" id="aBL-aI-kei"/>
+                            <constraint firstAttribute="trailing" secondItem="1Q6-Cm-WFE" secondAttribute="trailing" id="t0Z-l7-wji"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ZNC-fx-tUO" secondAttribute="bottom" id="3ah-2l-YFx"/>
+                    <constraint firstItem="ZNC-fx-tUO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="MsX-xC-SaC"/>
+                    <constraint firstItem="BFr-1Y-MCm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ZUr-Nl-KjR"/>
+                    <constraint firstAttribute="trailing" secondItem="ZNC-fx-tUO" secondAttribute="trailing" id="gRQ-Yy-T8p"/>
+                    <constraint firstAttribute="bottom" secondItem="BFr-1Y-MCm" secondAttribute="bottom" id="rgY-zZ-tex"/>
+                    <constraint firstItem="ZNC-fx-tUO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="siK-kQ-Img"/>
+                    <constraint firstAttribute="trailing" secondItem="BFr-1Y-MCm" secondAttribute="trailing" id="uH8-x2-YJX"/>
+                    <constraint firstItem="BFr-1Y-MCm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="v8O-Ec-hKa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="bgView" destination="ZNC-fx-tUO" id="kFo-l6-Xea"/>
+                <outlet property="collectionView" destination="BFr-1Y-MCm" id="9aB-8D-kEH"/>
+                <outlet property="noticeLabel" destination="TiA-q5-8n7" id="wgU-Tk-Y4d"/>
+                <outlet property="toSetButton" destination="1Q6-Cm-WFE" id="gTf-qQ-gve"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="175.5"/>
+        </tableViewCell>
+    </objects>
+</document>

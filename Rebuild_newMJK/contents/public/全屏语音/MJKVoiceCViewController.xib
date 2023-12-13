@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MJKVoiceCViewController">
+            <connections>
+                <outlet property="closeButton" destination="Asa-Hp-htv" id="eyx-tW-cAu"/>
+                <outlet property="longClickLabel" destination="Tu1-Ab-SNz" id="b15-BB-DQZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Asa-Hp-htv">
+                    <rect key="frame" x="177.5" y="627" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="CW0-DV-Yle"/>
+                        <constraint firstAttribute="width" constant="20" id="J3w-82-Hkq"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="语音搜索-叉"/>
+                    <connections>
+                        <action selector="closeButtonAction:" destination="-1" eventType="touchUpInside" id="cBX-Ly-HGe"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你可以这样说" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Kz-jm-Kn9">
+                    <rect key="frame" x="135" y="60" width="104" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13865845465" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taM-pY-M3i">
+                    <rect key="frame" x="140.5" y="118" width="93.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.73725490199999999" green="0.73333333329999995" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="021-63176589" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Kr-O1-TSW">
+                    <rect key="frame" x="139.5" y="145" width="96.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.73725490199999999" green="0.73333333329999995" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="逾期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGH-sM-30Q">
+                    <rect key="frame" x="173" y="172" width="29" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.73725490199999999" green="0.73333333329999995" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="星标客户" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgH-Jq-j8n">
+                    <rect key="frame" x="159.5" y="199" width="57.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.73725490199999999" green="0.73333333329999995" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="长按说话" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tu1-Ab-SNz">
+                    <rect key="frame" x="153" y="486" width="69.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="王大宝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrH-rO-qDz">
+                    <rect key="frame" x="166" y="91" width="43" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.73725490199999999" green="0.73333333329999995" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Egc-3c-tUa">
+                    <rect key="frame" x="147.5" y="527" width="80" height="80"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="MmB-4C-9Hg"/>
+                        <constraint firstAttribute="width" constant="80" id="oBg-vt-98B"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="语音搜索大按钮"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="mqK-0A-GNp" appends="YES" id="hH7-A9-T63"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jrH-rO-qDz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4wG-h0-SHW"/>
+                <constraint firstItem="taM-pY-M3i" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7O1-Wi-kbe"/>
+                <constraint firstItem="Egc-3c-tUa" firstAttribute="top" secondItem="Tu1-Ab-SNz" secondAttribute="bottom" constant="20" id="95k-eU-q54"/>
+                <constraint firstItem="5Kr-O1-TSW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ASa-85-Qem"/>
+                <constraint firstItem="Tu1-Ab-SNz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Dor-T9-EBy"/>
+                <constraint firstItem="taM-pY-M3i" firstAttribute="top" secondItem="jrH-rO-qDz" secondAttribute="bottom" constant="10" id="FI2-ch-pZI"/>
+                <constraint firstItem="8Kz-jm-Kn9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FIt-dB-Ccp"/>
+                <constraint firstItem="RgH-Jq-j8n" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="H9c-ho-ttD"/>
+                <constraint firstItem="Asa-Hp-htv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Hyv-o4-be4"/>
+                <constraint firstItem="nGH-sM-30Q" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Lyu-Os-yI1"/>
+                <constraint firstItem="jrH-rO-qDz" firstAttribute="top" secondItem="8Kz-jm-Kn9" secondAttribute="bottom" constant="10" id="R5H-q7-i9b"/>
+                <constraint firstItem="nGH-sM-30Q" firstAttribute="top" secondItem="5Kr-O1-TSW" secondAttribute="bottom" constant="10" id="ZIc-zo-3bQ"/>
+                <constraint firstItem="5Kr-O1-TSW" firstAttribute="top" secondItem="taM-pY-M3i" secondAttribute="bottom" constant="10" id="cFv-Xu-R0j"/>
+                <constraint firstItem="8Kz-jm-Kn9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="dUR-ZM-2BA"/>
+                <constraint firstItem="Egc-3c-tUa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gar-q9-xfN"/>
+                <constraint firstAttribute="bottom" secondItem="Asa-Hp-htv" secondAttribute="bottom" constant="20" id="h0H-m9-jGW"/>
+                <constraint firstItem="Asa-Hp-htv" firstAttribute="top" secondItem="Egc-3c-tUa" secondAttribute="bottom" constant="20" id="qZ0-US-3jk"/>
+                <constraint firstItem="RgH-Jq-j8n" firstAttribute="top" secondItem="nGH-sM-30Q" secondAttribute="bottom" constant="10" id="rab-oj-qrD"/>
+            </constraints>
+            <point key="canvasLocation" x="48.5" y="147.5"/>
+        </view>
+        <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="mqK-0A-GNp">
+            <connections>
+                <action selector="buttonLongClick:" destination="-1" id="Qhz-xZ-gK5"/>
+            </connections>
+        </pongPressGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="语音搜索-叉" width="16" height="16"/>
+        <image name="语音搜索大按钮" width="80" height="80"/>
+    </resources>
+</document>

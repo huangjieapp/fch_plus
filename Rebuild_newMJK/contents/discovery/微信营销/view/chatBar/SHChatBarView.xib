@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8a2-xW-miE" customClass="SHChatBarView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXk-mZ-lGV">
+                    <rect key="frame" x="343" y="8" width="28" height="28"/>
+                    <inset key="contentEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                    <state key="normal" image="chat_bar_more_normal"/>
+                    <state key="selected" image="chat_bar_input_normal"/>
+                    <connections>
+                        <action selector="handleButtonAction:" destination="8a2-xW-miE" eventType="touchUpInside" id="cSE-en-BWd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dm7-Jl-zqj">
+                    <rect key="frame" x="307" y="8" width="28" height="28"/>
+                    <inset key="contentEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                    <state key="normal" image="chat_bar_face_normal"/>
+                    <state key="selected" image="chat_bar_input_normal"/>
+                    <connections>
+                        <action selector="handleButtonAction:" destination="8a2-xW-miE" eventType="touchUpInside" id="Woi-Uj-3eG"/>
+                    </connections>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sR-QW-WfP" customClass="YYTextView">
+                    <rect key="frame" x="40" y="4" width="259" height="36"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize_">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xj7-Tz-gWA">
+                    <rect key="frame" x="40" y="4" width="259" height="36"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <state key="normal" title="按住说话">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted" title="松开 结束">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KaZ-Pe-0Sg">
+                    <rect key="frame" x="4" y="8" width="28" height="28"/>
+                    <inset key="contentEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                    <state key="normal" image="chat_bar_voice_normal"/>
+                    <state key="selected" image="chat_bar_input_normal"/>
+                    <connections>
+                        <action selector="handleButtonAction:" destination="8a2-xW-miE" eventType="touchUpInside" id="GD2-7F-m7k"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tXk-mZ-lGV" firstAttribute="leading" secondItem="Dm7-Jl-zqj" secondAttribute="trailing" constant="8" id="2fR-cv-VXC"/>
+                <constraint firstItem="3sR-QW-WfP" firstAttribute="top" secondItem="8a2-xW-miE" secondAttribute="top" constant="4" id="6AD-id-qQi"/>
+                <constraint firstAttribute="bottom" secondItem="3sR-QW-WfP" secondAttribute="bottom" constant="4" id="7je-jN-f4a"/>
+                <constraint firstItem="3sR-QW-WfP" firstAttribute="trailing" secondItem="xj7-Tz-gWA" secondAttribute="trailing" id="8La-sF-8sd"/>
+                <constraint firstItem="3sR-QW-WfP" firstAttribute="bottom" secondItem="xj7-Tz-gWA" secondAttribute="bottom" id="Gmn-4f-mVh"/>
+                <constraint firstItem="3sR-QW-WfP" firstAttribute="leading" secondItem="KaZ-Pe-0Sg" secondAttribute="trailing" constant="8" id="Ogu-Fr-sap"/>
+                <constraint firstAttribute="bottom" secondItem="tXk-mZ-lGV" secondAttribute="bottom" constant="8" id="TN1-al-fgr"/>
+                <constraint firstItem="3sR-QW-WfP" firstAttribute="leading" secondItem="xj7-Tz-gWA" secondAttribute="leading" id="YGA-mO-Dow"/>
+                <constraint firstItem="Dm7-Jl-zqj" firstAttribute="leading" secondItem="3sR-QW-WfP" secondAttribute="trailing" constant="8" id="b1o-pL-SO8"/>
+                <constraint firstAttribute="trailing" secondItem="tXk-mZ-lGV" secondAttribute="trailing" constant="4" id="bYu-8H-s2h"/>
+                <constraint firstAttribute="bottom" secondItem="KaZ-Pe-0Sg" secondAttribute="bottom" constant="8" id="hiw-rq-aVr"/>
+                <constraint firstAttribute="bottom" secondItem="Dm7-Jl-zqj" secondAttribute="bottom" constant="8" id="kdi-bc-ii8"/>
+                <constraint firstItem="3sR-QW-WfP" firstAttribute="top" secondItem="xj7-Tz-gWA" secondAttribute="top" id="lda-RE-0dY"/>
+                <constraint firstItem="KaZ-Pe-0Sg" firstAttribute="leading" secondItem="8a2-xW-miE" secondAttribute="leading" constant="4" id="roI-xz-I5o"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="faceButton" destination="Dm7-Jl-zqj" id="I3F-0l-I23"/>
+                <outlet property="otherButton" destination="tXk-mZ-lGV" id="6ai-gn-VxD"/>
+                <outlet property="textView" destination="3sR-QW-WfP" id="Ngc-vz-eZ1"/>
+                <outlet property="voiceButton" destination="KaZ-Pe-0Sg" id="TpA-Hr-KgD"/>
+                <outlet property="voiceRecordButton" destination="xj7-Tz-gWA" id="gAZ-bq-6DR"/>
+            </connections>
+            <point key="canvasLocation" x="-127" y="189"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chat_bar_face_normal" width="24" height="24"/>
+        <image name="chat_bar_input_normal" width="24" height="24"/>
+        <image name="chat_bar_more_normal" width="24" height="24"/>
+        <image name="chat_bar_voice_normal" width="24" height="24"/>
+    </resources>
+</document>

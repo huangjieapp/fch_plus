@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CGCRecordTextSelView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRT-jp-Zaw">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="jA1-0S-mtQ"/>
+                        <constraint firstAttribute="width" constant="50" id="kjZ-BT-K0L"/>
+                    </constraints>
+                    <state key="normal" image="键盘-跟进"/>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2Z-Ed-z8d">
+                    <rect key="frame" x="325" y="0.0" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="KEY-wZ-Kth"/>
+                        <constraint firstAttribute="width" constant="50" id="rwR-xh-DBo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="发送">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQu-4V-pkS">
+                    <rect key="frame" x="55" y="5" width="265" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYW-5c-y5o">
+                    <rect key="frame" x="54.5" y="5" width="265" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="语音跟进">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wr8-s9-8ZA">
+                    <rect key="frame" x="55" y="5" width="265" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="0.96068006753921509" green="0.96084433794021606" blue="0.96066969633102417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="TQu-4V-pkS" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="14U-iJ-dFz"/>
+                <constraint firstItem="V2Z-Ed-z8d" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="5OE-GM-ACE"/>
+                <constraint firstItem="wr8-s9-8ZA" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="7IZ-3z-PyV"/>
+                <constraint firstItem="cYW-5c-y5o" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="95g-FF-Mfe"/>
+                <constraint firstItem="wr8-s9-8ZA" firstAttribute="height" secondItem="cYW-5c-y5o" secondAttribute="height" id="9T2-oS-Ufj"/>
+                <constraint firstItem="cYW-5c-y5o" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="BH6-uM-AaS"/>
+                <constraint firstItem="cRT-jp-Zaw" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="GiX-Io-E2C"/>
+                <constraint firstItem="cYW-5c-y5o" firstAttribute="height" secondItem="TQu-4V-pkS" secondAttribute="height" id="Hpd-k1-sKW"/>
+                <constraint firstAttribute="bottom" secondItem="TQu-4V-pkS" secondAttribute="bottom" constant="5" id="Jf6-X2-xku"/>
+                <constraint firstItem="TQu-4V-pkS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="LMP-dz-6KP"/>
+                <constraint firstItem="TQu-4V-pkS" firstAttribute="leading" secondItem="cRT-jp-Zaw" secondAttribute="trailing" constant="5" id="Onm-Rh-RSJ"/>
+                <constraint firstItem="TQu-4V-pkS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="Wig-sM-Y9I"/>
+                <constraint firstItem="cRT-jp-Zaw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fRt-Yn-pQW"/>
+                <constraint firstAttribute="trailing" secondItem="V2Z-Ed-z8d" secondAttribute="trailing" id="ifl-fq-GNr"/>
+                <constraint firstItem="cYW-5c-y5o" firstAttribute="width" secondItem="TQu-4V-pkS" secondAttribute="width" id="mVW-gz-hQz"/>
+                <constraint firstItem="V2Z-Ed-z8d" firstAttribute="leading" secondItem="TQu-4V-pkS" secondAttribute="trailing" constant="5" id="tRm-CT-cRP"/>
+                <constraint firstItem="wr8-s9-8ZA" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="xvD-Zn-caY"/>
+                <constraint firstItem="wr8-s9-8ZA" firstAttribute="width" secondItem="cYW-5c-y5o" secondAttribute="width" id="zoF-j1-ZwW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgView" destination="TQu-4V-pkS" id="oJs-qp-Qo4"/>
+                <outlet property="changeBtn" destination="cRT-jp-Zaw" id="kQc-4e-6Cx"/>
+                <outlet property="recordBtn" destination="cYW-5c-y5o" id="Sfm-3n-d6J"/>
+                <outlet property="sendBtn" destination="V2Z-Ed-z8d" id="MTX-3e-Uke"/>
+                <outlet property="textView" destination="wr8-s9-8ZA" id="fUk-l3-BJY"/>
+            </connections>
+            <point key="canvasLocation" x="-375" y="-43"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="键盘-跟进" width="28" height="28"/>
+    </resources>
+</document>

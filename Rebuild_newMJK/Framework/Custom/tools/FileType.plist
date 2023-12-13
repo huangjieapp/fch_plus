@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>pptx</key>
+	<string>ppt</string>
+	<key>ppt</key>
+	<string>ppt</string>
+	<key>docx</key>
+	<string>word</string>
+	<key>doc</key>
+	<string>word</string>
+	<key>xls</key>
+	<string>excel</string>
+	<key>xlsx</key>
+	<string>excel</string>
+	<key>tif</key>
+	<string>图片</string>
+	<key>psd</key>
+	<string>图片</string>
+	<key>png</key>
+	<string>图片</string>
+	<key>jpg</key>
+	<string>图片</string>
+	<key>WMA</key>
+	<string>音乐</string>
+	<key>MP3</key>
+	<string>音乐</string>
+	<key>MOV</key>
+	<string>视频</string>
+	<key>AVI</key>
+	<string>视频</string>
+	<key>MP4</key>
+	<string>视频</string>
+	<key>pdf</key>
+	<string>pdf</string>
+</dict>
+</plist>

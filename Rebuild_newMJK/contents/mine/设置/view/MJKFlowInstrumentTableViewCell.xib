@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MJKFlowInstrumentTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eS6-fg-f6g">
+                        <rect key="frame" x="20" y="13.5" width="90" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="osZ-o3-1kV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="占位字段" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WuN-XR-Ddf">
+                        <rect key="frame" x="190" y="13.5" width="65" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWn-UB-Lga">
+                        <rect key="frame" x="290" y="14" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="0BB-cI-1f2"/>
+                            <constraint firstAttribute="height" constant="15" id="Ifk-Xc-aTu"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="addimgs"/>
+                        <connections>
+                            <action selector="delectButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="BvF-xL-VJX"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZA8-gM-W6W">
+                        <rect key="frame" x="260" y="14.5" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="fzj-yk-VYi"/>
+                            <constraint firstAttribute="height" constant="15" id="ip2-5M-qDv"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="follows"/>
+                        <connections>
+                            <action selector="editButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="NgR-xs-yfx"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设备类型" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQG-BO-6lO">
+                        <rect key="frame" x="115" y="14" width="70" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="mC9-IT-rRF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_login_password_open" translatesAutoresizingMaskIntoConstraints="NO" id="Alv-Co-CIV">
+                        <rect key="frame" x="230" y="14.5" width="20" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="7WN-Wh-Ljq"/>
+                            <constraint firstAttribute="width" constant="20" id="dfp-aE-LZ6"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4k-SZ-8dO">
+                        <rect key="frame" x="230" y="14.5" width="20" height="15"/>
+                        <connections>
+                            <action selector="liveButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="oHy-aM-eIs"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Alv-Co-CIV" firstAttribute="trailing" secondItem="W4k-SZ-8dO" secondAttribute="trailing" id="2lJ-ek-W4f"/>
+                    <constraint firstItem="Alv-Co-CIV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="67C-4y-iBL"/>
+                    <constraint firstItem="eS6-fg-f6g" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="9R7-RM-oaP"/>
+                    <constraint firstItem="WuN-XR-Ddf" firstAttribute="leading" secondItem="wQG-BO-6lO" secondAttribute="trailing" constant="5" id="9hj-Xa-3Wm"/>
+                    <constraint firstItem="ZA8-gM-W6W" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="EaN-dH-1QW"/>
+                    <constraint firstItem="wQG-BO-6lO" firstAttribute="leading" secondItem="eS6-fg-f6g" secondAttribute="trailing" constant="5" id="FH6-zw-3b9"/>
+                    <constraint firstItem="wQG-BO-6lO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="JJI-e6-OYJ"/>
+                    <constraint firstItem="Alv-Co-CIV" firstAttribute="top" secondItem="W4k-SZ-8dO" secondAttribute="top" id="NGL-FP-ckh"/>
+                    <constraint firstItem="Alv-Co-CIV" firstAttribute="bottom" secondItem="W4k-SZ-8dO" secondAttribute="bottom" id="NLr-eQ-KXJ"/>
+                    <constraint firstItem="WuN-XR-Ddf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="NfM-Q6-C0i"/>
+                    <constraint firstItem="ZA8-gM-W6W" firstAttribute="leading" secondItem="Alv-Co-CIV" secondAttribute="trailing" constant="10" id="R9T-r4-Knd"/>
+                    <constraint firstItem="YWn-UB-Lga" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Tlw-7g-ilo"/>
+                    <constraint firstItem="Alv-Co-CIV" firstAttribute="leading" secondItem="W4k-SZ-8dO" secondAttribute="leading" id="W0V-xo-JSB"/>
+                    <constraint firstAttribute="trailing" secondItem="YWn-UB-Lga" secondAttribute="trailing" constant="15" id="oyt-Y8-pcW"/>
+                    <constraint firstItem="YWn-UB-Lga" firstAttribute="leading" secondItem="ZA8-gM-W6W" secondAttribute="trailing" constant="15" id="puw-qD-xUZ"/>
+                    <constraint firstItem="eS6-fg-f6g" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="wAh-gg-Szg"/>
+                    <constraint firstItem="ZA8-gM-W6W" firstAttribute="leading" secondItem="WuN-XR-Ddf" secondAttribute="trailing" constant="5" id="xA3-rc-umL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="delButton" destination="YWn-UB-Lga" id="3nS-xb-0iW"/>
+                <outlet property="editButton" destination="ZA8-gM-W6W" id="f2P-eu-WIk"/>
+                <outlet property="liveButton" destination="W4k-SZ-8dO" id="rLF-cq-XCQ"/>
+                <outlet property="manageLabel" destination="wQG-BO-6lO" id="w5c-ZB-Apl"/>
+                <outlet property="placeLabel" destination="WuN-XR-Ddf" id="eAa-jH-x3x"/>
+                <outlet property="titleLabel" destination="eS6-fg-f6g" id="Psf-c5-SQs"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="addimgs" width="16" height="16"/>
+        <image name="follows" width="15" height="15"/>
+        <image name="icon_login_password_open" width="60" height="36"/>
+    </resources>
+</document>

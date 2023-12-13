@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MJKGroupPeopleTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QB-xt-4Ce">
+                        <rect key="frame" x="20" y="11" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="3sN-XT-LwC"/>
+                            <constraint firstAttribute="width" constant="20" id="zoV-AC-cbR"/>
+                        </constraints>
+                        <state key="normal" image="kuang_off"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ue-BA-uj3">
+                        <rect key="frame" x="55" y="13.5" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="af3-dC-6dh">
+                        <rect key="frame" x="264.5" y="13.5" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NC7-Gl-0bY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                        <connections>
+                            <action selector="buttonSelectClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ZIV-lC-Rub"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="NC7-Gl-0bY" secondAttribute="bottom" id="4Lw-R4-xYe"/>
+                    <constraint firstAttribute="trailing" secondItem="af3-dC-6dh" secondAttribute="trailing" constant="20" id="8hd-uJ-131"/>
+                    <constraint firstAttribute="trailing" secondItem="NC7-Gl-0bY" secondAttribute="trailing" id="Akd-mm-647"/>
+                    <constraint firstItem="1QB-xt-4Ce" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="IbM-a5-cKj"/>
+                    <constraint firstItem="NC7-Gl-0bY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Kc9-3x-a2V"/>
+                    <constraint firstItem="0Ue-BA-uj3" firstAttribute="leading" secondItem="1QB-xt-4Ce" secondAttribute="trailing" constant="15" id="PNn-lz-79m"/>
+                    <constraint firstItem="1QB-xt-4Ce" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="kcq-rd-900"/>
+                    <constraint firstItem="0Ue-BA-uj3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="kzk-Zy-wfC"/>
+                    <constraint firstItem="af3-dC-6dh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="oQg-mQ-nYa"/>
+                    <constraint firstItem="NC7-Gl-0bY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zrc-0T-pYa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="didSelectButton" destination="NC7-Gl-0bY" id="dE1-zx-0Zv"/>
+                <outlet property="groupName" destination="af3-dC-6dh" id="tCK-uU-yim"/>
+                <outlet property="nameLabel" destination="0Ue-BA-uj3" id="FpX-kz-GTF"/>
+                <outlet property="selectButton" destination="1QB-xt-4Ce" id="D6b-99-qQa"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="kuang_off" width="14" height="14"/>
+    </resources>
+</document>

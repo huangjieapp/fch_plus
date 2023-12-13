@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MJKSetWorkTaskCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hm4-Jw-Tof">
+                        <rect key="frame" x="20" y="2" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="9hl-aU-abd"/>
+                            <constraint firstAttribute="height" constant="40" id="ejQ-p0-PXE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Daa-nD-6EN">
+                        <rect key="frame" x="70" y="13.5" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQe-gh-njY">
+                        <rect key="frame" x="290" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="Xqw-II-Gzd"/>
+                            <constraint firstAttribute="height" constant="20" id="mhQ-eh-bj0"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="kuang_off"/>
+                        <state key="selected" backgroundImage="kuangselected">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="selectedButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aSV-mq-FXJ"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hm4-Jw-Tof" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="8Cz-RH-kfc"/>
+                    <constraint firstAttribute="trailing" secondItem="UQe-gh-njY" secondAttribute="trailing" constant="10" id="BIZ-xm-8JQ"/>
+                    <constraint firstItem="hm4-Jw-Tof" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dGr-9k-6AY"/>
+                    <constraint firstItem="Daa-nD-6EN" firstAttribute="leading" secondItem="hm4-Jw-Tof" secondAttribute="trailing" constant="10" id="k1T-jX-X2g"/>
+                    <constraint firstItem="UQe-gh-njY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sFg-nR-7Fu"/>
+                    <constraint firstItem="Daa-nD-6EN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xXJ-1T-rUW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="headImageView" destination="hm4-Jw-Tof" id="cAq-Y6-ewt"/>
+                <outlet property="nameLabel" destination="Daa-nD-6EN" id="Aeo-Pg-VQE"/>
+                <outlet property="selectedButton" destination="UQe-gh-njY" id="5CY-zt-5e6"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="kuang_off" width="14" height="14"/>
+        <image name="kuangselected" width="14" height="14"/>
+    </resources>
+</document>

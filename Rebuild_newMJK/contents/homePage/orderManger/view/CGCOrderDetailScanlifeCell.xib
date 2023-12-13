@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CGCOrderDetailScanlifeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="产品详情" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GtN-n3-hBz">
+                        <rect key="frame" x="10" y="10" width="58" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNB-4V-ury">
+                        <rect key="frame" x="10" y="92.5" width="57.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a2X-Hg-EyC" userLabel="文本View">
+                        <rect key="frame" x="10" y="32" width="300" height="77.5"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e4o-Bw-YQX" userLabel="文本textview">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="77.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLC-rD-Uh5" userLabel="二维码按钮">
+                                <rect key="frame" x="275" y="52.5" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="f82-eD-kbn"/>
+                                    <constraint firstAttribute="width" constant="25" id="i7V-bC-MKY"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="产品添加按钮图标"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hLC-rD-Uh5" secondAttribute="bottom" id="3Ph-s4-bCS"/>
+                            <constraint firstItem="e4o-Bw-YQX" firstAttribute="leading" secondItem="a2X-Hg-EyC" secondAttribute="leading" id="CSE-9r-TFv"/>
+                            <constraint firstAttribute="trailing" secondItem="hLC-rD-Uh5" secondAttribute="trailing" id="GFy-1H-EML"/>
+                            <constraint firstAttribute="trailing" secondItem="e4o-Bw-YQX" secondAttribute="trailing" id="Wbm-G3-4fa"/>
+                            <constraint firstItem="e4o-Bw-YQX" firstAttribute="top" secondItem="a2X-Hg-EyC" secondAttribute="top" id="gmH-pb-sze"/>
+                            <constraint firstAttribute="bottom" secondItem="e4o-Bw-YQX" secondAttribute="bottom" id="jIF-CS-n7g"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="cNB-4V-ury" secondAttribute="bottom" constant="10" id="LJy-3E-Afh"/>
+                    <constraint firstItem="a2X-Hg-EyC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Opn-Lc-yui"/>
+                    <constraint firstAttribute="trailing" secondItem="a2X-Hg-EyC" secondAttribute="trailing" constant="10" id="abD-rG-vlt"/>
+                    <constraint firstItem="GtN-n3-hBz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="bnc-AU-XQg"/>
+                    <constraint firstAttribute="bottom" secondItem="a2X-Hg-EyC" secondAttribute="bottom" constant="10" id="fFQ-nq-sLx"/>
+                    <constraint firstItem="GtN-n3-hBz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="i0Z-NU-QG5"/>
+                    <constraint firstItem="a2X-Hg-EyC" firstAttribute="top" secondItem="GtN-n3-hBz" secondAttribute="bottom" constant="5" id="p3r-oT-7yv"/>
+                    <constraint firstItem="cNB-4V-ury" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="rgn-lz-FX5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="bgView" destination="a2X-Hg-EyC" id="Ryi-dr-gaT"/>
+                <outlet property="scanlifeBtn" destination="hLC-rD-Uh5" id="oPl-aH-rob"/>
+                <outlet property="textView" destination="e4o-Bw-YQX" id="KL6-Ys-U6q"/>
+            </connections>
+            <point key="canvasLocation" x="-615" y="-174"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="产品添加按钮图标" width="75" height="75"/>
+    </resources>
+</document>

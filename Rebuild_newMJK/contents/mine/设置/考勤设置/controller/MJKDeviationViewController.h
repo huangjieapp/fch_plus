@@ -1,0 +1,14 @@
+//
+//  MJKDeviationViewController.h
+//  Rebuild_newMJK
+//
+//  Created by Hjie on 2018/7/25.
+//  Copyright © 2018年 脉居客. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface MJKDeviationViewController : UIViewController
+/** 返回米*/
+@property (nonatomic, copy) void(^backMeterBlock)(NSString *meter);
+@end

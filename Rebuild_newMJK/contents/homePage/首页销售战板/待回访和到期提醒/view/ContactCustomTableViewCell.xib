@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ContactCustomTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="84.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="mJ8-D0-ZzO">
+                        <rect key="frame" x="15" y="12.5" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="azp-Gi-k19"/>
+                            <constraint firstAttribute="height" constant="60" id="iMJ-id-Y69"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张继科" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rvt-HC-tj8">
+                        <rect key="frame" x="85" y="15" width="52" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="车牌号:沪AX9789,沪C23896" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEL-6G-OSJ">
+                        <rect key="frame" x="85" y="46" width="196.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d06-aq-HIq">
+                        <rect key="frame" x="142" y="15" width="20" height="20"/>
+                        <color key="backgroundColor" red="0.99796789884567261" green="0.76570218801498413" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="RPZ-8w-uH2"/>
+                            <constraint firstAttribute="height" constant="20" id="UnR-pu-UaG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="V5">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="星标" translatesAutoresizingMaskIntoConstraints="NO" id="xXV-5w-Gyg">
+                        <rect key="frame" x="165" y="15" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="tcO-to-5vY"/>
+                            <constraint firstAttribute="width" constant="20" id="zO7-GC-XzI"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已到店" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sk9-Kr-jqk">
+                        <rect key="frame" x="335" y="0.0" width="37" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xXV-5w-Gyg" firstAttribute="leading" secondItem="d06-aq-HIq" secondAttribute="trailing" constant="3" id="4bA-3g-7SV"/>
+                    <constraint firstItem="Rvt-HC-tj8" firstAttribute="leading" secondItem="mJ8-D0-ZzO" secondAttribute="trailing" constant="10" id="8e7-T9-Zed"/>
+                    <constraint firstItem="Rvt-HC-tj8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Apb-mg-rR8"/>
+                    <constraint firstItem="xXV-5w-Gyg" firstAttribute="centerY" secondItem="d06-aq-HIq" secondAttribute="centerY" id="Bjf-XS-Ywg"/>
+                    <constraint firstItem="mJ8-D0-ZzO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="JgF-3v-dD5"/>
+                    <constraint firstItem="Sk9-Kr-jqk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="LsN-UB-1eE"/>
+                    <constraint firstAttribute="trailing" secondItem="Sk9-Kr-jqk" secondAttribute="trailing" constant="3" id="Reo-BO-Hxx"/>
+                    <constraint firstItem="d06-aq-HIq" firstAttribute="leading" secondItem="Rvt-HC-tj8" secondAttribute="trailing" constant="5" id="ZyD-vC-qFL"/>
+                    <constraint firstItem="mJ8-D0-ZzO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="mYc-JO-dej"/>
+                    <constraint firstItem="d06-aq-HIq" firstAttribute="centerY" secondItem="Rvt-HC-tj8" secondAttribute="centerY" id="nXm-e5-zTU"/>
+                    <constraint firstItem="jEL-6G-OSJ" firstAttribute="top" secondItem="Rvt-HC-tj8" secondAttribute="bottom" constant="10" id="wDW-uv-CbW"/>
+                    <constraint firstItem="jEL-6G-OSJ" firstAttribute="leading" secondItem="Rvt-HC-tj8" secondAttribute="leading" id="yS8-5m-tN8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="32.5" y="78.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder" width="64" height="64"/>
+        <image name="星标" width="17" height="17"/>
+    </resources>
+</document>

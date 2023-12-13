@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MJKCustomerCenterCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="228" height="115"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="228" height="115"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="名单流量" translatesAutoresizingMaskIntoConstraints="NO" id="jgb-Zk-cB3">
+                        <rect key="frame" x="74" y="42.5" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="Kkz-Y1-LA3"/>
+                            <constraint firstAttribute="height" constant="30" id="SR5-P5-cxu"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="门店流量" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Drm-gN-VwK">
+                        <rect key="frame" x="104" y="59.5" width="53.5" height="16"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNv-fD-RSN">
+                        <rect key="frame" x="122" y="34.5" width="18" height="20.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Drm-gN-VwK" firstAttribute="top" secondItem="HNv-fD-RSN" secondAttribute="bottom" constant="5" id="Kn3-zh-bfS"/>
+                <constraint firstItem="jgb-Zk-cB3" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Wsx-Fh-XXd"/>
+                <constraint firstItem="HNv-fD-RSN" firstAttribute="centerX" secondItem="Drm-gN-VwK" secondAttribute="centerX" id="ZtF-n6-BuL"/>
+                <constraint firstItem="jgb-Zk-cB3" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" constant="-25" id="gXf-wK-pkv"/>
+                <constraint firstItem="Drm-gN-VwK" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="10" id="nCm-Ct-E7s"/>
+                <constraint firstItem="Drm-gN-VwK" firstAttribute="leading" secondItem="jgb-Zk-cB3" secondAttribute="trailing" id="swB-9u-4Im"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="228" height="115"/>
+            <connections>
+                <outlet property="imageView" destination="jgb-Zk-cB3" id="KAf-Bu-LTD"/>
+                <outlet property="numberLabel" destination="HNv-fD-RSN" id="nPE-zX-o0K"/>
+                <outlet property="titleLabel" destination="Drm-gN-VwK" id="pNo-48-yOi"/>
+            </connections>
+            <point key="canvasLocation" x="118" y="59.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="名单流量" width="24" height="24"/>
+    </resources>
+</document>

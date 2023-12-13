@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MJKApplicationCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="82" height="52"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="82" height="52"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GhJ-c8-hVf">
+                        <rect key="frame" x="0.0" y="0.0" width="82" height="52"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="潜客管理" translatesAutoresizingMaskIntoConstraints="NO" id="f1l-Q2-9ga">
+                                <rect key="frame" x="28.5" y="5" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="f1l-Q2-9ga" secondAttribute="height" multiplier="1:1" id="z7m-GJ-L57"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="客户管理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HD7-YK-FIV">
+                                <rect key="frame" x="16.5" y="35" width="49.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addApplication" translatesAutoresizingMaskIntoConstraints="NO" id="8p7-H1-dE2">
+                                <rect key="frame" x="67" y="3" width="12" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8p7-H1-dE2" secondAttribute="height" multiplier="1:1" id="YLG-PW-DIl"/>
+                                    <constraint firstAttribute="width" constant="12" id="cxR-hJ-3EC"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hot图标" translatesAutoresizingMaskIntoConstraints="NO" id="uC8-5W-Gbg">
+                                <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="3px-xe-fxt"/>
+                                    <constraint firstAttribute="height" constant="25" id="InY-7L-PE9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HD7-YK-FIV" firstAttribute="centerX" secondItem="GhJ-c8-hVf" secondAttribute="centerX" id="22T-sE-rGD"/>
+                            <constraint firstItem="uC8-5W-Gbg" firstAttribute="leading" secondItem="GhJ-c8-hVf" secondAttribute="leading" id="3Ml-pa-x9u"/>
+                            <constraint firstItem="f1l-Q2-9ga" firstAttribute="top" secondItem="GhJ-c8-hVf" secondAttribute="top" constant="5" id="4ff-RZ-OCk"/>
+                            <constraint firstItem="f1l-Q2-9ga" firstAttribute="width" secondItem="GhJ-c8-hVf" secondAttribute="width" multiplier="25:82" id="Bjf-qJ-KND"/>
+                            <constraint firstItem="f1l-Q2-9ga" firstAttribute="centerX" secondItem="GhJ-c8-hVf" secondAttribute="centerX" id="Lhr-HG-mt4"/>
+                            <constraint firstItem="HD7-YK-FIV" firstAttribute="top" secondItem="f1l-Q2-9ga" secondAttribute="bottom" constant="5" id="SZd-iD-VlC"/>
+                            <constraint firstItem="8p7-H1-dE2" firstAttribute="top" secondItem="GhJ-c8-hVf" secondAttribute="top" constant="3" id="dYQ-00-4zB"/>
+                            <constraint firstItem="uC8-5W-Gbg" firstAttribute="top" secondItem="GhJ-c8-hVf" secondAttribute="top" id="ic4-Fa-3Kf"/>
+                            <constraint firstAttribute="trailing" secondItem="8p7-H1-dE2" secondAttribute="trailing" constant="3" id="sNK-yd-z4c"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="GhJ-c8-hVf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JB8-bw-aOB"/>
+                <constraint firstAttribute="trailing" secondItem="GhJ-c8-hVf" secondAttribute="trailing" id="Pn2-4g-Z4H"/>
+                <constraint firstItem="GhJ-c8-hVf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Qcl-CI-5a5"/>
+                <constraint firstAttribute="bottom" secondItem="GhJ-c8-hVf" secondAttribute="bottom" id="p92-Kf-QBA"/>
+            </constraints>
+            <connections>
+                <outlet property="hotImageView" destination="uC8-5W-Gbg" id="GXD-rn-fud"/>
+                <outlet property="iconImageV" destination="f1l-Q2-9ga" id="sFE-Fv-nZn"/>
+                <outlet property="indicateImageV" destination="8p7-H1-dE2" id="5V0-DS-qLK"/>
+                <outlet property="mainView" destination="GhJ-c8-hVf" id="JBB-1O-UIn"/>
+                <outlet property="titleLab" destination="HD7-YK-FIV" id="vvO-Kl-hye"/>
+            </connections>
+            <point key="canvasLocation" x="-93" y="-2"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="addApplication" width="12" height="12"/>
+        <image name="hot图标" width="36" height="36"/>
+        <image name="潜客管理" width="24" height="24"/>
+    </resources>
+</document>

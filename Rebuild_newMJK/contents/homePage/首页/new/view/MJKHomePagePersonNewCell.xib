@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="58" id="KGk-i7-Jjw" customClass="MJKHomePagePersonNewCell">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="58"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Leg-YV-ypr">
+                        <rect key="frame" x="10" y="9" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Qxp-dy-r9l"/>
+                            <constraint firstAttribute="height" constant="40" id="dGC-kh-dMk"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2c2-2x-fKW">
+                        <rect key="frame" x="60" y="9" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZF-LC-gQc">
+                        <rect key="frame" x="60" y="32" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y56-1y-8W5">
+                        <rect key="frame" x="315" y="16.5" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="3Fv-tp-Jo8"/>
+                            <constraint firstAttribute="width" constant="25" id="AWU-Wy-j9x"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" backgroundImage="ico"/>
+                        <connections>
+                            <action selector="codeButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="p3B-ZF-ISn"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Leg-YV-ypr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0O6-v2-XgW"/>
+                    <constraint firstItem="2c2-2x-fKW" firstAttribute="top" secondItem="Leg-YV-ypr" secondAttribute="top" id="4oh-iI-jqb"/>
+                    <constraint firstAttribute="trailing" secondItem="y56-1y-8W5" secondAttribute="trailing" constant="20" id="7b4-DL-1Tr"/>
+                    <constraint firstItem="Leg-YV-ypr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="9Ow-Y5-63k"/>
+                    <constraint firstItem="qZF-LC-gQc" firstAttribute="leading" secondItem="2c2-2x-fKW" secondAttribute="leading" id="Co9-1q-SCe"/>
+                    <constraint firstItem="2c2-2x-fKW" firstAttribute="leading" secondItem="Leg-YV-ypr" secondAttribute="trailing" constant="10" id="auM-Ku-irl"/>
+                    <constraint firstItem="qZF-LC-gQc" firstAttribute="bottom" secondItem="Leg-YV-ypr" secondAttribute="bottom" id="cy2-OU-aYM"/>
+                    <constraint firstItem="y56-1y-8W5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="pip-lm-UQf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="portraitImageView" destination="Leg-YV-ypr" id="sdu-hy-PUv"/>
+                <outlet property="qcodeButton" destination="y56-1y-8W5" id="jIe-tF-oYR"/>
+                <outlet property="shopLabel" destination="qZF-LC-gQc" id="Aua-Cu-KrT"/>
+                <outlet property="titleLabel" destination="2c2-2x-fKW" id="vRU-mF-QEK"/>
+            </connections>
+            <point key="canvasLocation" x="169.59999999999999" y="119.64017991004499"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ico" width="64" height="64"/>
+    </resources>
+</document>

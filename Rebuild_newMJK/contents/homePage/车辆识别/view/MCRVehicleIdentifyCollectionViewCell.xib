@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="3Mh-1A-DKU" customClass="MCRVehicleIdentifyCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="135"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="135"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ga7-oh-bpb">
+                        <rect key="frame" x="1" y="93" width="118" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="zkO-ok-y4g"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13:14:17" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7u-3D-7CI">
+                        <rect key="frame" x="1" y="114" width="59" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="Btj-56-Zlr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已处理" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erc-GP-hoy">
+                        <rect key="frame" x="60" y="114" width="59" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="tG6-eE-9sW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="张继科" translatesAutoresizingMaskIntoConstraints="NO" id="YVr-CQ-AYK">
+                        <rect key="frame" x="15" y="15" width="90" height="73"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="u7u-3D-7CI" firstAttribute="top" secondItem="Ga7-oh-bpb" secondAttribute="bottom" constant="5" id="8xZ-Gq-DfX"/>
+                <constraint firstItem="erc-GP-hoy" firstAttribute="leading" secondItem="u7u-3D-7CI" secondAttribute="trailing" id="HMg-af-b87"/>
+                <constraint firstAttribute="bottom" secondItem="erc-GP-hoy" secondAttribute="bottom" constant="5" id="Hc8-rm-Q2J"/>
+                <constraint firstAttribute="bottom" secondItem="u7u-3D-7CI" secondAttribute="bottom" constant="5" id="MrY-Um-Ka0"/>
+                <constraint firstItem="u7u-3D-7CI" firstAttribute="leading" secondItem="3Mh-1A-DKU" secondAttribute="leading" constant="1" id="Nd7-95-gOD"/>
+                <constraint firstItem="Ga7-oh-bpb" firstAttribute="leading" secondItem="3Mh-1A-DKU" secondAttribute="leading" constant="1" id="QVE-0G-3ge"/>
+                <constraint firstItem="u7u-3D-7CI" firstAttribute="top" secondItem="Ga7-oh-bpb" secondAttribute="bottom" constant="5" id="QYF-q8-w0F"/>
+                <constraint firstItem="YVr-CQ-AYK" firstAttribute="top" secondItem="3Mh-1A-DKU" secondAttribute="top" constant="15" id="SOI-6a-Ian"/>
+                <constraint firstAttribute="trailing" secondItem="Ga7-oh-bpb" secondAttribute="trailing" constant="1" id="Xbs-YV-teG"/>
+                <constraint firstItem="Ga7-oh-bpb" firstAttribute="top" secondItem="YVr-CQ-AYK" secondAttribute="bottom" constant="5" id="cV9-qb-YaN"/>
+                <constraint firstItem="YVr-CQ-AYK" firstAttribute="leading" secondItem="3Mh-1A-DKU" secondAttribute="leading" constant="15" id="gBC-7f-C8Y"/>
+                <constraint firstAttribute="trailing" secondItem="erc-GP-hoy" secondAttribute="trailing" constant="1" id="hoK-xD-zyB"/>
+                <constraint firstItem="erc-GP-hoy" firstAttribute="width" secondItem="u7u-3D-7CI" secondAttribute="width" id="oWt-yD-RbT"/>
+                <constraint firstAttribute="trailing" secondItem="YVr-CQ-AYK" secondAttribute="trailing" constant="15" id="vEH-Lw-ybj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="o9w-on-vLs"/>
+            <size key="customSize" width="120" height="135"/>
+            <connections>
+                <outlet property="imgPhoto" destination="YVr-CQ-AYK" id="odk-ev-NzF"/>
+                <outlet property="labState" destination="erc-GP-hoy" id="Lwl-tr-MT8"/>
+                <outlet property="labTime" destination="u7u-3D-7CI" id="8uP-CG-ASj"/>
+                <outlet property="vehicleLabel" destination="Ga7-oh-bpb" id="cfT-df-U8Q"/>
+            </connections>
+            <point key="canvasLocation" x="83.200000000000003" y="188.45577211394306"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="张继科" width="51" height="51"/>
+    </resources>
+</document>

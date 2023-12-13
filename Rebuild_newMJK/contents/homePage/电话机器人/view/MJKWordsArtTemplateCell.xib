@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="137" id="KGk-i7-Jjw" customClass="MJKWordsArtTemplateCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="137"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="136.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="未打钩" translatesAutoresizingMaskIntoConstraints="NO" id="xF9-ya-pwY">
+                        <rect key="frame" x="10" y="58.5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="6kW-a7-dss"/>
+                            <constraint firstAttribute="height" constant="20" id="TWo-T5-3BM"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5d-wu-0B1">
+                        <rect key="frame" x="40" y="60" width="270" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQ8-AC-yBL">
+                        <rect key="frame" x="0.0" y="0.0" width="183.5" height="136.5"/>
+                        <connections>
+                            <action selector="selectButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="urx-Ur-KXz"/>
+                        </connections>
+                    </button>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdC-w6-YiJ">
+                        <rect key="frame" x="183.5" y="0.0" width="136.5" height="136.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="机器人圆形语音" translatesAutoresizingMaskIntoConstraints="NO" id="Dlf-I0-uPD">
+                                <rect key="frame" x="39" y="10" width="58.5" height="58.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Dlf-I0-uPD" secondAttribute="height" multiplier="1:1" id="j3B-Nt-kTb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="试听" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okn-Es-uVW">
+                                <rect key="frame" x="0.0" y="68.5" width="136.5" height="68"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWC-Ql-Zcv">
+                                <rect key="frame" x="0.0" y="0.0" width="136.5" height="136.5"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="okn-Es-uVW" firstAttribute="top" secondItem="Dlf-I0-uPD" secondAttribute="bottom" id="0X6-8W-1DD"/>
+                            <constraint firstAttribute="width" secondItem="kdC-w6-YiJ" secondAttribute="height" multiplier="1:1" id="4Bi-wW-9N0"/>
+                            <constraint firstAttribute="bottom" secondItem="okn-Es-uVW" secondAttribute="bottom" id="4N9-Yv-qgC"/>
+                            <constraint firstItem="VWC-Ql-Zcv" firstAttribute="leading" secondItem="kdC-w6-YiJ" secondAttribute="leading" id="7kS-4b-W8f"/>
+                            <constraint firstAttribute="trailing" secondItem="okn-Es-uVW" secondAttribute="trailing" id="B1j-uw-ZNs"/>
+                            <constraint firstAttribute="bottom" secondItem="VWC-Ql-Zcv" secondAttribute="bottom" id="BiX-s4-wxJ"/>
+                            <constraint firstItem="VWC-Ql-Zcv" firstAttribute="top" secondItem="kdC-w6-YiJ" secondAttribute="top" id="EFi-DI-cXf"/>
+                            <constraint firstItem="Dlf-I0-uPD" firstAttribute="height" secondItem="kdC-w6-YiJ" secondAttribute="height" multiplier="3:7" id="HQ1-dz-Ate"/>
+                            <constraint firstItem="Dlf-I0-uPD" firstAttribute="top" secondItem="kdC-w6-YiJ" secondAttribute="top" constant="10" id="e36-HY-DIx"/>
+                            <constraint firstItem="okn-Es-uVW" firstAttribute="leading" secondItem="kdC-w6-YiJ" secondAttribute="leading" id="gNX-fA-9Ny"/>
+                            <constraint firstAttribute="trailing" secondItem="VWC-Ql-Zcv" secondAttribute="trailing" id="muC-UN-3Oa"/>
+                            <constraint firstItem="Dlf-I0-uPD" firstAttribute="centerX" secondItem="kdC-w6-YiJ" secondAttribute="centerX" id="qmL-3m-ifx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="kdC-w6-YiJ" secondAttribute="bottom" id="9Jd-Fg-qFL"/>
+                    <constraint firstAttribute="trailing" secondItem="r5d-wu-0B1" secondAttribute="trailing" constant="10" id="9UH-bT-06A"/>
+                    <constraint firstItem="yQ8-AC-yBL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ddr-7i-OxP"/>
+                    <constraint firstItem="kdC-w6-YiJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="OQF-mq-hc9"/>
+                    <constraint firstItem="r5d-wu-0B1" firstAttribute="leading" secondItem="xF9-ya-pwY" secondAttribute="trailing" constant="10" id="Szm-Qg-FoG"/>
+                    <constraint firstItem="r5d-wu-0B1" firstAttribute="centerY" secondItem="xF9-ya-pwY" secondAttribute="centerY" id="V4g-ol-V4k"/>
+                    <constraint firstAttribute="bottom" secondItem="yQ8-AC-yBL" secondAttribute="bottom" id="Vzg-0G-sDs"/>
+                    <constraint firstItem="kdC-w6-YiJ" firstAttribute="leading" secondItem="yQ8-AC-yBL" secondAttribute="trailing" id="b3Z-aJ-pzd"/>
+                    <constraint firstItem="xF9-ya-pwY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="b40-60-VFP"/>
+                    <constraint firstItem="xF9-ya-pwY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="doc-cp-ocb"/>
+                    <constraint firstItem="yQ8-AC-yBL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="iId-bB-GJa"/>
+                    <constraint firstAttribute="trailing" secondItem="kdC-w6-YiJ" secondAttribute="trailing" id="xYj-9n-W0P"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="playVoiceButton" destination="VWC-Ql-Zcv" id="aEq-0L-Bao"/>
+                <outlet property="selectButton" destination="yQ8-AC-yBL" id="Sby-Vd-F1P"/>
+                <outlet property="selectImageView" destination="xF9-ya-pwY" id="sWE-BH-5Ys"/>
+                <outlet property="titleLabel" destination="r5d-wu-0B1" id="ty7-Ac-0vl"/>
+            </connections>
+            <point key="canvasLocation" x="52.799999999999997" y="131.78410794602701"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="未打钩" width="25.5" height="25.5"/>
+        <image name="机器人圆形语音" width="24" height="24"/>
+    </resources>
+</document>

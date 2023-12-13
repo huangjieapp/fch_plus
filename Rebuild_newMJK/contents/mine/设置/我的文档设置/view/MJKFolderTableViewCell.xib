@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MJKFolderTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="文档文件夹" translatesAutoresizingMaskIntoConstraints="NO" id="fPz-j7-Bqc">
+                        <rect key="frame" x="10" y="5" width="33.5" height="33.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="fPz-j7-Bqc" secondAttribute="height" multiplier="1:1" id="BGM-OW-bLB"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCt-fK-zOc">
+                        <rect key="frame" x="285" y="9.5" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="HZQ-tv-pb9"/>
+                            <constraint firstAttribute="height" constant="25" id="tkP-4I-VIG"/>
+                        </constraints>
+                        <state key="normal" image="文档删除"/>
+                        <connections>
+                            <action selector="deleteButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="mnt-JM-DQm"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFl-9T-cwb">
+                        <rect key="frame" x="250" y="9.5" width="25" height="25"/>
+                        <state key="normal" image="文档修改"/>
+                        <connections>
+                            <action selector="editButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="TSs-ZE-08f"/>
+                        </connections>
+                    </button>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="我的文档名称" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t05-Tg-Adf">
+                        <rect key="frame" x="53.5" y="13.5" width="186.5" height="17"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <action selector="changeValueTF:" destination="KGk-i7-Jjw" eventType="editingChanged" id="LHn-fg-OAS"/>
+                        </connections>
+                    </textField>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_1_normal" translatesAutoresizingMaskIntoConstraints="NO" id="L8J-OW-z9E">
+                        <rect key="frame" x="290" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="7Bt-Gp-YDQ"/>
+                            <constraint firstAttribute="width" constant="20" id="9I1-Z6-mWO"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="L8J-OW-z9E" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2Fv-uz-4sj"/>
+                    <constraint firstItem="UFl-9T-cwb" firstAttribute="centerY" secondItem="CCt-fK-zOc" secondAttribute="centerY" id="3cX-r6-78X"/>
+                    <constraint firstItem="t05-Tg-Adf" firstAttribute="leading" secondItem="fPz-j7-Bqc" secondAttribute="trailing" constant="10" id="7Ge-D2-naM"/>
+                    <constraint firstItem="UFl-9T-cwb" firstAttribute="leading" secondItem="t05-Tg-Adf" secondAttribute="trailing" constant="10" id="7dO-qa-2V9"/>
+                    <constraint firstAttribute="bottom" secondItem="fPz-j7-Bqc" secondAttribute="bottom" constant="5" id="EB0-J6-KmC"/>
+                    <constraint firstAttribute="trailing" secondItem="CCt-fK-zOc" secondAttribute="trailing" constant="10" id="HH2-nw-QNq"/>
+                    <constraint firstItem="fPz-j7-Bqc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="LLe-PG-VeN"/>
+                    <constraint firstItem="fPz-j7-Bqc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="MO0-Wx-PfT"/>
+                    <constraint firstItem="CCt-fK-zOc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Mj2-c4-VPn"/>
+                    <constraint firstItem="UFl-9T-cwb" firstAttribute="height" secondItem="CCt-fK-zOc" secondAttribute="height" id="dnz-5O-Le6"/>
+                    <constraint firstItem="UFl-9T-cwb" firstAttribute="width" secondItem="CCt-fK-zOc" secondAttribute="width" id="gt7-BL-MIV"/>
+                    <constraint firstItem="fPz-j7-Bqc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="hBA-QQ-2nL"/>
+                    <constraint firstItem="t05-Tg-Adf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="qpf-kJ-vY1"/>
+                    <constraint firstItem="CCt-fK-zOc" firstAttribute="leading" secondItem="UFl-9T-cwb" secondAttribute="trailing" constant="10" id="uIU-Jg-q20"/>
+                    <constraint firstItem="L8J-OW-z9E" firstAttribute="trailing" secondItem="CCt-fK-zOc" secondAttribute="trailing" id="wsL-aI-Xm2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="deleteButton" destination="CCt-fK-zOc" id="wc2-QM-fQs"/>
+                <outlet property="editButton" destination="UFl-9T-cwb" id="pKy-Vz-TsF"/>
+                <outlet property="folderNameTF" destination="t05-Tg-Adf" id="YBL-qy-iwB"/>
+                <outlet property="headImageView" destination="fPz-j7-Bqc" id="1Xh-e2-smN"/>
+                <outlet property="selectImageView" destination="L8J-OW-z9E" id="xJH-Xj-Ns5"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_1_normal" width="14" height="14"/>
+        <image name="文档修改" width="150" height="150"/>
+        <image name="文档删除" width="150" height="150"/>
+        <image name="文档文件夹" width="50" height="50"/>
+    </resources>
+</document>

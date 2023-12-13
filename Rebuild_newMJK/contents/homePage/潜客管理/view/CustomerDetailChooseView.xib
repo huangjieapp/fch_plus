@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomerDetailChooseView">
+            <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全部" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoR-d9-TW0">
+                    <rect key="frame" x="0.0" y="0.0" width="45" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.48229777812957764" green="0.48238468170166016" blue="0.4822922945022583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmd-UB-CLC">
+                    <rect key="frame" x="0.0" y="31" width="45" height="14"/>
+                    <color key="backgroundColor" red="0.8587297797203064" green="0.85887759923934937" blue="0.85872042179107666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="GoR-d9-TW0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6M2-bo-2R9"/>
+                <constraint firstAttribute="bottom" secondItem="jmd-UB-CLC" secondAttribute="bottom" id="8bY-g5-1bC"/>
+                <constraint firstItem="GoR-d9-TW0" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="30:45" id="CsJ-Ls-Oof"/>
+                <constraint firstItem="GoR-d9-TW0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LwU-7g-9Mm"/>
+                <constraint firstItem="jmd-UB-CLC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hgm-Hd-p17"/>
+                <constraint firstAttribute="trailing" secondItem="GoR-d9-TW0" secondAttribute="trailing" id="mTo-Rv-a2u"/>
+                <constraint firstItem="jmd-UB-CLC" firstAttribute="top" secondItem="GoR-d9-TW0" secondAttribute="bottom" constant="1" id="r6D-bc-Vh9"/>
+                <constraint firstAttribute="trailing" secondItem="jmd-UB-CLC" secondAttribute="trailing" id="rJa-2d-p2e"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bottomLabel" destination="jmd-UB-CLC" id="dID-yU-1kF"/>
+                <outlet property="topLabel" destination="GoR-d9-TW0" id="rc6-Lg-CvZ"/>
+            </connections>
+            <point key="canvasLocation" x="-18.5" y="-153.5"/>
+        </view>
+    </objects>
+</document>

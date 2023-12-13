@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CGCPicCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UWZ-vg-3r1">
+                        <rect key="frame" x="20" y="10" width="120" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="hgc-za-iUC"/>
+                            <constraint firstAttribute="width" constant="120" id="qDC-E7-DaS"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egq-8y-jcs">
+                        <rect key="frame" x="150" y="70" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="未选中" translatesAutoresizingMaskIntoConstraints="NO" id="Fxq-Uh-XHm">
+                        <rect key="frame" x="293" y="31.5" width="17" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="17" id="dZz-tN-cue"/>
+                            <constraint firstAttribute="height" constant="17" id="ose-tb-f7E"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="egq-8y-jcs" firstAttribute="leading" secondItem="UWZ-vg-3r1" secondAttribute="trailing" constant="10" id="KYV-4E-9dA"/>
+                    <constraint firstItem="egq-8y-jcs" firstAttribute="bottom" secondItem="UWZ-vg-3r1" secondAttribute="bottom" id="cnZ-vL-j3R"/>
+                    <constraint firstAttribute="trailing" secondItem="Fxq-Uh-XHm" secondAttribute="trailing" constant="10" id="cui-30-ZvP"/>
+                    <constraint firstItem="UWZ-vg-3r1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="fQr-Ln-oyg"/>
+                    <constraint firstItem="UWZ-vg-3r1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="gdx-Un-Qe9"/>
+                    <constraint firstItem="Fxq-Uh-XHm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ggK-XM-cF7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImg" destination="UWZ-vg-3r1" id="s1m-KE-QGi"/>
+                <outlet property="selIconImg" destination="Fxq-Uh-XHm" id="Sq9-Nl-K7b"/>
+                <outlet property="titLab" destination="egq-8y-jcs" id="fON-xx-p67"/>
+            </connections>
+            <point key="canvasLocation" x="-345" y="-33"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="未选中" width="17" height="17"/>
+    </resources>
+</document>

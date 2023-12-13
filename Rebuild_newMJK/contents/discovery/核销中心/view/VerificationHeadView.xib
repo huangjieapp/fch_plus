@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VerificationHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yIn-E3-q3P">
+                    <rect key="frame" x="15" y="15" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="cRU-vb-oHG"/>
+                        <constraint firstAttribute="width" constant="60" id="yJy-iV-gUL"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4E1-jo-YGf">
+                    <rect key="frame" x="85" y="15" width="35.5" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="180" id="bQV-kQ-iI1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下单时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEf-aa-PHJ">
+                    <rect key="frame" x="85" y="42" width="57.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cO-dF-4hi">
+                    <rect key="frame" x="329.5" y="15" width="35.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHq-Fz-um1">
+                    <rect key="frame" x="97.5" y="105" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="3UX-qE-nDu"/>
+                        <constraint firstAttribute="width" constant="40" id="wbm-aj-AHH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                    <state key="normal" title="电话" image="电话"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uky-QR-AqR">
+                    <rect key="frame" x="167.5" y="105" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="haz-ik-aXa"/>
+                        <constraint firstAttribute="width" constant="40" id="rjk-VG-utP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                    <state key="normal" title="短信" image="短信"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLc-GO-KNX">
+                    <rect key="frame" x="237.5" y="105" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="JhR-4o-XI6"/>
+                        <constraint firstAttribute="height" constant="40" id="Yal-N6-x7G"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                    <state key="normal" title="微信" image="微信"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncQ-25-xip">
+                    <rect key="frame" x="329.5" y="42" width="35.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Uky-QR-AqR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0Qt-Bt-Yua"/>
+                <constraint firstItem="FEf-aa-PHJ" firstAttribute="top" secondItem="4E1-jo-YGf" secondAttribute="bottom" constant="10" id="7Lk-bA-v1m"/>
+                <constraint firstItem="Uky-QR-AqR" firstAttribute="leading" secondItem="wHq-Fz-um1" secondAttribute="trailing" constant="30" id="9Gx-On-nZ1"/>
+                <constraint firstItem="OLc-GO-KNX" firstAttribute="leading" secondItem="Uky-QR-AqR" secondAttribute="trailing" constant="30" id="A8j-SE-E7r"/>
+                <constraint firstItem="ncQ-25-xip" firstAttribute="centerY" secondItem="FEf-aa-PHJ" secondAttribute="centerY" id="DI0-hH-Uqv"/>
+                <constraint firstItem="4E1-jo-YGf" firstAttribute="leading" secondItem="yIn-E3-q3P" secondAttribute="trailing" constant="10" id="FMd-or-PBL"/>
+                <constraint firstItem="yIn-E3-q3P" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="G2O-Rf-ELm"/>
+                <constraint firstAttribute="trailing" secondItem="8cO-dF-4hi" secondAttribute="trailing" constant="10" id="G8I-17-yyD"/>
+                <constraint firstItem="yIn-E3-q3P" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="RPe-Ir-E9O"/>
+                <constraint firstAttribute="bottom" secondItem="Uky-QR-AqR" secondAttribute="bottom" constant="15" id="RuO-vZ-YR5"/>
+                <constraint firstItem="4E1-jo-YGf" firstAttribute="top" secondItem="yIn-E3-q3P" secondAttribute="top" id="S4Q-c9-l3O"/>
+                <constraint firstItem="wHq-Fz-um1" firstAttribute="centerY" secondItem="Uky-QR-AqR" secondAttribute="centerY" id="T1a-jo-F9I"/>
+                <constraint firstItem="FEf-aa-PHJ" firstAttribute="leading" secondItem="yIn-E3-q3P" secondAttribute="trailing" constant="10" id="bj8-cg-hGG"/>
+                <constraint firstItem="OLc-GO-KNX" firstAttribute="centerY" secondItem="Uky-QR-AqR" secondAttribute="centerY" id="hOs-eK-BLg"/>
+                <constraint firstAttribute="trailing" secondItem="ncQ-25-xip" secondAttribute="trailing" constant="10" id="oQr-OJ-Mwq"/>
+                <constraint firstItem="8cO-dF-4hi" firstAttribute="centerY" secondItem="4E1-jo-YGf" secondAttribute="centerY" id="uGm-Iq-BiJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headImg" destination="yIn-E3-q3P" id="lq6-wr-DDe"/>
+                <outlet property="messBtn" destination="Uky-QR-AqR" id="mRI-BU-FLH"/>
+                <outlet property="nameLab" destination="4E1-jo-YGf" id="11a-2a-WHJ"/>
+                <outlet property="storeLab" destination="8cO-dF-4hi" id="dLE-rI-7QS"/>
+                <outlet property="telBtn" destination="wHq-Fz-um1" id="L20-gp-hLB"/>
+                <outlet property="timeLab" destination="ncQ-25-xip" id="R00-xA-oSU"/>
+                <outlet property="wxBtn" destination="OLc-GO-KNX" id="Alp-6h-4qT"/>
+            </connections>
+            <point key="canvasLocation" x="-105.5" y="37"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="微信" width="36" height="36"/>
+        <image name="电话" width="36" height="36"/>
+        <image name="短信" width="36" height="36"/>
+    </resources>
+</document>

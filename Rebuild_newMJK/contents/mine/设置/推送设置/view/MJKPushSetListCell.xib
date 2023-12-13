@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MJKPushSetListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kuang_off" translatesAutoresizingMaskIntoConstraints="NO" id="Ijx-qv-xcu">
+                        <rect key="frame" x="10" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="WOb-wy-Mvl"/>
+                            <constraint firstAttribute="width" constant="20" id="cEa-jT-0Zd"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZb-j0-RNO">
+                        <rect key="frame" x="20" y="13.5" width="170" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3h-3a-hTw">
+                        <rect key="frame" x="260" y="7" width="50" height="30"/>
+                        <color key="backgroundColor" red="0.93700152640000001" green="0.93765097860000002" blue="0.95755785699999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="KSO-D7-rMa"/>
+                            <constraint firstAttribute="width" constant="50" id="n5q-u3-6sE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="开启">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="openButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="01o-GQ-VeH"/>
+                        </connections>
+                    </button>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKw-hg-hhe">
+                        <rect key="frame" x="200" y="7" width="50" height="30"/>
+                        <color key="backgroundColor" red="0.97742764261744963" green="0.93369861577181212" blue="0.10801174496644295" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="修改">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="editButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Il9-pY-4Yf"/>
+                        </connections>
+                    </button>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3N-hF-3YN">
+                        <rect key="frame" x="214.5" y="16" width="26.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tql-LF-wAs">
+                        <rect key="frame" x="251" y="6.5" width="51" height="31"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="onTintColor" red="0.99215686270000003" green="0.76078431369999999" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="openSwitchButtonAction:" destination="KGk-i7-Jjw" eventType="valueChanged" id="uat-jN-tdH"/>
+                        </connections>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zZb-j0-RNO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2wu-qi-Fzw"/>
+                    <constraint firstItem="DKw-hg-hhe" firstAttribute="width" secondItem="l3h-3a-hTw" secondAttribute="width" id="4Y0-GD-4IA"/>
+                    <constraint firstItem="tql-LF-wAs" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="AtE-Pv-lJa"/>
+                    <constraint firstItem="l3h-3a-hTw" firstAttribute="leading" secondItem="DKw-hg-hhe" secondAttribute="trailing" constant="10" id="NKk-yG-5kW"/>
+                    <constraint firstItem="Ijx-qv-xcu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="PYM-4p-lDG"/>
+                    <constraint firstItem="DKw-hg-hhe" firstAttribute="height" secondItem="l3h-3a-hTw" secondAttribute="height" id="RfB-7J-0tR"/>
+                    <constraint firstItem="DKw-hg-hhe" firstAttribute="leading" secondItem="zZb-j0-RNO" secondAttribute="trailing" constant="10" id="RtH-rN-ypO"/>
+                    <constraint firstItem="Ijx-qv-xcu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="WCc-JA-JTh"/>
+                    <constraint firstItem="tql-LF-wAs" firstAttribute="leading" secondItem="N3N-hF-3YN" secondAttribute="trailing" constant="10" id="YOw-9x-b2J"/>
+                    <constraint firstItem="zZb-j0-RNO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="gTU-s1-lyJ"/>
+                    <constraint firstAttribute="trailing" secondItem="tql-LF-wAs" secondAttribute="trailing" constant="20" id="huW-0T-TWh"/>
+                    <constraint firstItem="DKw-hg-hhe" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="j1f-if-8eL"/>
+                    <constraint firstAttribute="trailing" secondItem="l3h-3a-hTw" secondAttribute="trailing" constant="10" id="jg7-DB-Woe"/>
+                    <constraint firstItem="N3N-hF-3YN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="m4f-Bm-V2a"/>
+                    <constraint firstItem="l3h-3a-hTw" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="mHB-f8-7TT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="editButton" destination="DKw-hg-hhe" id="nae-kH-KX4"/>
+                <outlet property="labelLeftLayout" destination="gTU-s1-lyJ" id="hMd-w6-e0m"/>
+                <outlet property="labelRightLayout" destination="RtH-rN-ypO" id="BlP-Xg-IPt"/>
+                <outlet property="messageOpenLabel" destination="N3N-hF-3YN" id="i5M-Je-tbI"/>
+                <outlet property="openButton" destination="l3h-3a-hTw" id="6Jb-Cy-uua"/>
+                <outlet property="openSwitchButton" destination="tql-LF-wAs" id="OwT-qr-Tqw"/>
+                <outlet property="selectImageView" destination="Ijx-qv-xcu" id="Kas-6N-GRs"/>
+                <outlet property="titleLabel" destination="zZb-j0-RNO" id="Z2Z-Ti-evn"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="kuang_off" width="14" height="14"/>
+    </resources>
+</document>

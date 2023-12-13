@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MJKPushOpenSetSection1Cell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名单下发接收人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Va-a6-WiF">
+                        <rect key="frame" x="20" y="13.5" width="100" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ib-32-muk">
+                        <rect key="frame" x="280" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="dHn-LJ-fly"/>
+                            <constraint firstAttribute="height" constant="20" id="eyG-Hs-hwk"/>
+                        </constraints>
+                        <state key="normal" image="kuang_off"/>
+                        <connections>
+                            <action selector="selectButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Dhl-tU-jQ7"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="7Ib-32-muk" secondAttribute="trailing" constant="20" id="J1Y-On-vtZ"/>
+                    <constraint firstItem="0Va-a6-WiF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="LQb-Cz-Xae"/>
+                    <constraint firstItem="7Ib-32-muk" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="LWO-J1-n9e"/>
+                    <constraint firstItem="0Va-a6-WiF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="jhh-YO-S09"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="selectButton" destination="7Ib-32-muk" id="vmS-hZ-rqh"/>
+                <outlet property="titleLabel" destination="0Va-a6-WiF" id="Eti-gQ-w9G"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="kuang_off" width="14" height="14"/>
+    </resources>
+</document>

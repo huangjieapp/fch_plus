@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SHMineTopTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="设置头像" translatesAutoresizingMaskIntoConstraints="NO" id="yDr-Rs-uLY">
+                        <rect key="frame" x="15" y="15" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="yDr-Rs-uLY" secondAttribute="height" multiplier="1:1" id="Lnl-YJ-m85"/>
+                            <constraint firstAttribute="width" constant="60" id="Sna-9y-gBD"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tim1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tub-u9-Qjj">
+                        <rect key="frame" x="90" y="20" width="31" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账号:tim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnG-Lz-0cU">
+                        <rect key="frame" x="90" y="51" width="53" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.60777515172958374" green="0.60788232088088989" blue="0.60776835680007935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJT-oE-G5d">
+                        <rect key="frame" x="325" y="30" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="0yE-Y3-6rm"/>
+                            <constraint firstAttribute="width" constant="30" id="bMZ-WO-7WS"/>
+                        </constraints>
+                        <state key="normal" image="icon_new_scan"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vnG-Lz-0cU" firstAttribute="top" secondItem="tub-u9-Qjj" secondAttribute="bottom" constant="10" id="796-FF-VHf"/>
+                    <constraint firstItem="FJT-oE-G5d" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="LC1-Em-Aiq"/>
+                    <constraint firstItem="yDr-Rs-uLY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="LYm-bb-94i"/>
+                    <constraint firstItem="yDr-Rs-uLY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="QQD-i1-hGw"/>
+                    <constraint firstItem="vnG-Lz-0cU" firstAttribute="leading" secondItem="tub-u9-Qjj" secondAttribute="leading" id="jNN-52-MJd"/>
+                    <constraint firstItem="tub-u9-Qjj" firstAttribute="leading" secondItem="yDr-Rs-uLY" secondAttribute="trailing" constant="15" id="mgS-U3-Uip"/>
+                    <constraint firstAttribute="trailing" secondItem="FJT-oE-G5d" secondAttribute="trailing" constant="20" id="r4Z-ws-4ys"/>
+                    <constraint firstItem="tub-u9-Qjj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="wFr-bV-aRz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionLabel" destination="vnG-Lz-0cU" id="eQ4-Tw-ZOU"/>
+                <outlet property="myImageView" destination="yDr-Rs-uLY" id="LgW-ak-mQe"/>
+                <outlet property="qrcodeButton" destination="FJT-oE-G5d" id="0AX-6K-FEl"/>
+                <outlet property="titleLabel" destination="tub-u9-Qjj" id="nQY-Yb-SBX"/>
+            </connections>
+            <point key="canvasLocation" x="-99.5" y="24"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_new_scan" width="47" height="49"/>
+        <image name="设置头像" width="66" height="66"/>
+    </resources>
+</document>
